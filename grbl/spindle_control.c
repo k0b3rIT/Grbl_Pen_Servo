@@ -44,16 +44,16 @@ The other end is 0.002 sec (0.002 / 0.000064 = 31 ticks)
 
 // these are full travel values. If you want to move less than full travel adjust these values
 // If your servo is going the wrong way, swap them.
-#define PEN_SERVO_DOWN     31      
-#define PEN_SERVO_UP       16        
+#define PEN_SERVO_DOWN     16      
+#define PEN_SERVO_UP       31        
  
 #define SERVO_PWM_DDR	  DDRB
-  #define SPINDLE_PWM_PORT  PORTB
-  #define SERVO_PWM_BIT	  3    // Uno Digital Pin 11 
-  #define SERVO_TCCRA_REGISTER	  TCCR2A
-  #define SERVO_TCCRB_REGISTER	  TCCR2B
-  #define SERVO_OCR_REGISTER      OCR2A
-  #define SERVO_COMB_BIT	        COM2A1
+#define SPINDLE_PWM_PORT  PORTB
+#define SERVO_PWM_BIT	  3    // Uno Digital Pin 11 
+#define SERVO_TCCRA_REGISTER	  TCCR2A
+#define SERVO_TCCRB_REGISTER	  TCCR2B
+#define SERVO_OCR_REGISTER      OCR2A
+#define SERVO_COMB_BIT	        COM2A1
  
 void init_servo()
 {
